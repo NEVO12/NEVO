@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/BOYKAX
+cd $HOME/VEVO
 install() {
 rm -rf $HOME/.telegram-cli
 sudo apt-get update -y
@@ -20,9 +20,9 @@ sudo apt-get install lua-lgi -y
 sudo apt-get install libnotify-dev -y
 sudo chmod +x tg
 lua BOYKAX.lua
-sudo chmod +x BOYKAX
-sudo chmod +x ./BK
-./BK
+sudo chmod +x NEVO
+sudo chmod +x ./NE
+./NE
 }
 if [ "$1" = "install" ]; then
 install
@@ -33,7 +33,7 @@ exit 1
 fi
 sudo chmod +x tg
 lua BOYKAX.lua
-sudo chmod +x BOYKAX
-sudo chmod +x ./BK
-./BK
+sudo chmod +x NEVO
+sudo chmod +x ./NE
+./NE
 fi

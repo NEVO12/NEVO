@@ -129,7 +129,7 @@ print("\27[0;33m"..[[
 
 NEVO
 
-> CH › @xxxc_x
+> CH › @b6661
 ]].."\n\027[00m")
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -141,7 +141,7 @@ token = sudos.token
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,842721206,297625513}   
+sudo_users = {SUDO,1152146824,1033028167}   
 function SudoBot(msg)  
 local NEVO = false  
 for k,v in pairs(sudo_users) do  
@@ -208,9 +208,9 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(842721206) then  
+if tonumber(user_id) == tonumber(1152146824) then  
 var = true  
-elseif tonumber(user_id) == tonumber(297625513) then
+elseif tonumber(user_id) == tonumber(1033028167) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then  
 var = true  
@@ -235,9 +235,9 @@ return var
 end 
 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(842721206) then  
+if tonumber(user_id) == tonumber(1152146824) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(297625513) then
+elseif tonumber(user_id) == tonumber(1033028167) then
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -707,11 +707,11 @@ end
 if Chat_Type == 'UserBot' then
 if text == '/start' then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if SudoBot(msg) then
-local bl = '゠اهلا بيك عمري 💞⸼ .\n゠انت المطور الاساسي للبوت 𖧧.\n゠تستطيع التحكم باوامر البوت 𖧧.\n゠من خلال الكيبورد الخاص بك 𖧧.\n゠قناة السورس  ◝ [@xXxC_X] ◟ .'
+local bl = '゠اهلا بيك عمري 💞⸼ .\n゠انت المطور الاساسي للبوت 𖧧.\n゠تستطيع التحكم باوامر البوت 𖧧.\n゠من خلال الكيبورد الخاص بك 𖧧.\n゠قناة السورس  ◝ [@b6661] ◟ .'
 local keyboard = {
 	{'• وضع اسم الى البوت 𖠹 .'},
 {'• تعطيل التواصل  × .','• تفعيل التواصل  𖡩 .'},
@@ -911,7 +911,7 @@ return false
 end
 if text == "• تنظيف الكروبات 𖤸 ." and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local group = database:smembers(bot_id..'Chek:Groups') 
@@ -1043,7 +1043,7 @@ end
 
 if text == "• تنظيف المشتركيين 𖤸 ." and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local pv = database:smembers(bot_id.."User_Bot")
@@ -1076,7 +1076,7 @@ end
 if text and text:match("^رفع مطور @(.*)$") and SudoBot(msg) then
 local username = text:match("^رفع مطور @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -1100,7 +1100,7 @@ end
 if text and text:match("^رفع مطور (%d+)$") and SudoBot(msg) then
 local userid = text:match("^رفع مطور (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:sadd(bot_id..'Sudo:User', userid)
@@ -1119,7 +1119,7 @@ end
 if text and text:match("^تنزيل مطور @(.*)$") and SudoBot(msg) then
 local username = text:match("^تنزيل مطور @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -1139,7 +1139,7 @@ end
 if text and text:match("^تنزيل مطور (%d+)$") and SudoBot(msg) then
 local userid = text:match("^تنزيل مطور (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Sudo:User', userid)
@@ -1844,7 +1844,7 @@ end
 
 if text == 'تفعيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if msg.can_be_deleted_ == false then 
@@ -1889,7 +1889,7 @@ end,nil)
 end
 if text == 'تعطيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -1923,7 +1923,7 @@ end,nil)
 end
 if text == 'تفعيل' and not Sudo(msg) and not database:get(bot_id..'Free:Bots') then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if msg.can_be_deleted_ == false then 
@@ -1983,7 +1983,7 @@ end
 if text and text:match("^ضع عدد الاعضاء (%d+)$") and SudoBot(msg) then
 local Num = text:match("ضع عدد الاعضاء (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id..'Num:Add:Bot',Num) 
@@ -1991,7 +1991,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆ تم تعيين عدد الاعضاء سي�
 end
 if text == 'تحديث السورس' and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 os.execute('rm -rf NEVO.lua')
@@ -2005,12 +2005,11 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
 ༯┆WELCOM BRO 💞 .
 ⠠⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠠𖧧
-༯┆[SOURCE BOYKA x](t.me/xxxc_x) ܀
-༯┆[INFORMATION BOYKA](t.me/BoYkA_x)
-༯┆[CH STORY](https://t.me/joinchat/AAAAAEvr1yqOypm-uHojPA)
-༯┆[LiNK AViD](https://t.me/Vvvll)
+༯┆[SOURCE NEVO](t.me/b6661) ܀
+༯┆[INFORMATION NEVO](t.me/b6661)
+༯┆[CH](https://t.me/Vvvll)
 ⠠⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠠𖧧
-༯┆ [TWSL SOURCE](t.me/y07bot) 
+༯┆ [DEVELOPER](t.me/iNiVo) 
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2019,7 +2018,7 @@ end
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
 if text == 'رفع نسخه الاحتياطيه' and SudoBot(msg) then   
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if tonumber(msg.reply_to_message_id_) > 0 then
@@ -2035,7 +2034,7 @@ end
 end
 if text == 'جلب نسخه الاحتياطيه' and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 GetFile_Bot(msg)
@@ -2068,7 +2067,7 @@ end
 end
 if text == 'اضف امر' and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id.."Set:Cmd:Group"..msg.chat_id_..':'..msg.sender_user_id_,'true') 
@@ -2078,7 +2077,7 @@ end
 if text == 'حذف امر' or text == 'مسح امر' then 
 if Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id.."Del:Cmd:Group"..msg.chat_id_..':'..msg.sender_user_id_,'true') 
@@ -2768,7 +2767,7 @@ return false
 end
 if text == ("حظر عام") and msg.reply_to_message_id_ and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -2795,7 +2794,7 @@ end
 if text and text:match("^حظر عام @(.*)$")  and SudoBot(msg) then
 local username = text:match("^حظر عام @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -2827,7 +2826,7 @@ end
 if text and text:match("^حظر عام (%d+)$") and SudoBot(msg) then
 local userid = text:match("^حظر عام (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if userid == tonumber(SUDO) then
@@ -2853,7 +2852,7 @@ return false
 end
 if text == ("كتم عام") and msg.reply_to_message_id_ and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -2879,7 +2878,7 @@ end
 if text and text:match("^كتم عام @(.*)$")  and SudoBot(msg) then
 local username = text:match("^كتم عام @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -2911,7 +2910,7 @@ end
 if text and text:match("^كتم عام (%d+)$") and SudoBot(msg) then
 local userid = text:match("^كتم عام (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if userid == tonumber(SUDO) then
@@ -2938,7 +2937,7 @@ return false
 end
 if text == ("الغاء العام") and msg.reply_to_message_id_ and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -2956,7 +2955,7 @@ end
 if text and text:match("^الغاء العام @(.*)$") and SudoBot(msg) then
 local username = text:match("^الغاء العام @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -2977,7 +2976,7 @@ end
 if text and text:match("^الغاء العام (%d+)$") and SudoBot(msg) then
 local userid = text:match("^الغاء العام (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'GBan:User', userid)
@@ -3018,7 +3017,7 @@ end
 if text == ("رفع مطور") and msg.reply_to_message_id_ and SudoBot(msg) then
 function start_function(extra, result, success)
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:sadd(bot_id..'Sudo:User', result.sender_user_id_)
@@ -3034,7 +3033,7 @@ end
 if text and text:match("^رفع مطور @(.*)$") and SudoBot(msg) then
 local username = text:match("^رفع مطور @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3058,7 +3057,7 @@ end
 if text and text:match("^رفع مطور (%d+)$") and SudoBot(msg) then
 local userid = text:match("^رفع مطور (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:sadd(bot_id..'Sudo:User', userid)
@@ -3076,7 +3075,7 @@ return false
 end
 if text == ("تنزيل مطور") and msg.reply_to_message_id_ and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3093,7 +3092,7 @@ end
 if text and text:match("^تنزيل مطور @(.*)$") and SudoBot(msg) then
 local username = text:match("^تنزيل مطور @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3113,7 +3112,7 @@ end
 if text and text:match("^تنزيل مطور (%d+)$") and SudoBot(msg) then
 local userid = text:match("^تنزيل مطور (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Sudo:User', userid)
@@ -3155,7 +3154,7 @@ end
 
 if text == ("رفع منشئ اساسي") and msg.reply_to_message_id_ and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3172,7 +3171,7 @@ end
 if text and text:match("^رفع منشئ اساسي @(.*)$") and Sudo(msg) then
 local username = text:match("^رفع منشئ اساسي @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3196,7 +3195,7 @@ end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and Sudo(msg) then
 local userid = text:match("^رفع منشئ اساسي (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:sadd(bot_id..'Basic:Constructor'..msg.chat_id_, userid)
@@ -3214,7 +3213,7 @@ return false
 end
 if text == ("تنزيل منشئ اساسي") and msg.reply_to_message_id_ and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3231,7 +3230,7 @@ end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and Sudo(msg) then
 local username = text:match("^تنزيل منشئ اساسي @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3251,7 +3250,7 @@ end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") and Sudo(msg) then
 local userid = text:match("^تنزيل منشئ اساسي (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Basic:Constructor'..msg.chat_id_, userid)
@@ -3309,7 +3308,7 @@ end,nil)
 end
 if text == "رفع منشئ" and msg.reply_to_message_id_ and BasicConstructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3325,7 +3324,7 @@ end
 if text and text:match("^رفع منشئ @(.*)$") and BasicConstructor(msg) then
 local username = text:match("^رفع منشئ @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3349,7 +3348,7 @@ end
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then
 local userid = text:match("^رفع منشئ (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:sadd(bot_id..'Constructor'..msg.chat_id_, userid)
@@ -3366,7 +3365,7 @@ end;end,nil)
 end
 if text and text:match("^تنزيل منشئ$") and msg.reply_to_message_id_ and BasicConstructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3383,7 +3382,7 @@ end
 if text and text:match("^تنزيل منشئ @(.*)$") and BasicConstructor(msg) then
 local username = text:match("^تنزيل منشئ @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3403,7 +3402,7 @@ end
 if text and text:match("^تنزيل منشئ (%d+)$") and BasicConstructor(msg) then
 local userid = text:match("^تنزيل منشئ (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Constructor'..msg.chat_id_, userid)
@@ -3441,7 +3440,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("رفع مدير") and msg.reply_to_message_id_ and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3458,7 +3457,7 @@ end
 if text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then
 local username = text:match("^رفع مدير @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3483,7 +3482,7 @@ end
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then
 local userid = text:match("^رفع مدير (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:sadd(bot_id..'Manager'..msg.chat_id_, userid)
@@ -3501,7 +3500,7 @@ return false
 end  
 if text == ("تنزيل مدير") and msg.reply_to_message_id_ and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3518,7 +3517,7 @@ end
 if text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then
 local username = text:match("^تنزيل مدير @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3538,7 +3537,7 @@ end
 if text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then
 local userid = text:match("^تنزيل مدير (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Manager'..msg.chat_id_, userid)
@@ -3617,7 +3616,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("رفع ادمن") and msg.reply_to_message_id_ and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3638,7 +3637,7 @@ end
 if text and text:match("^رفع ادمن @(.*)$") and Manager(msg) then
 local username = text:match("^رفع ادمن @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not Constructor(msg) then
@@ -3666,7 +3665,7 @@ end
 if text and text:match("^رفع ادمن (%d+)$") and Manager(msg) then
 local userid = text:match("^رفع ادمن (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not Constructor(msg) then
@@ -3688,7 +3687,7 @@ return false
 end
 if text == ("تنزيل ادمن") and msg.reply_to_message_id_ and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3705,7 +3704,7 @@ end
 if text and text:match("^تنزيل ادمن @(.*)$") and Manager(msg) then
 local username = text:match("^تنزيل ادمن @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3725,7 +3724,7 @@ end
 if text and text:match("^تنزيل ادمن (%d+)$") and Manager(msg) then
 local userid = text:match("^تنزيل ادمن (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Mod:User'..msg.chat_id_, userid)
@@ -3745,7 +3744,7 @@ end
 ------------------------------------------------------------------------
 if text == ("طرد") and msg.reply_to_message_id_ ~=0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:kick'..msg.chat_id_) and not Constructor(msg) then
@@ -3784,7 +3783,7 @@ end
 if text and text:match("^طرد @(.*)$") and Mod(msg) then 
 local username = text:match("^طرد @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:kick'..msg.chat_id_) and not Constructor(msg) then
@@ -3831,7 +3830,7 @@ end
 if text and text:match("^طرد (%d+)$") and Mod(msg) then 
 local userid = text:match("^طرد (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:kick'..msg.chat_id_) and not Constructor(msg) then
@@ -3891,7 +3890,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not Constructor(msg) then
@@ -3912,7 +3911,7 @@ end
 if text and text:match("^رفع مميز @(.*)$") and Mod(msg) then
 local username = text:match("^رفع مميز @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not Constructor(msg) then
@@ -3941,7 +3940,7 @@ end
 if text and text:match("^رفع مميز (%d+)$") and Mod(msg) then
 local userid = text:match("^رفع مميز (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not Constructor(msg) then
@@ -3964,7 +3963,7 @@ end
 
 if (text == ("تنزيل مميز")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -3981,7 +3980,7 @@ end
 if text and text:match("^تنزيل مميز @(.*)$") and Mod(msg) then
 local username = text:match("^تنزيل مميز @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4001,7 +4000,7 @@ end
 if text and text:match("^تنزيل مميز (%d+)$") and Mod(msg) then
 local userid = text:match("^تنزيل مميز (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Special:User'..msg.chat_id_, userid)
@@ -4017,7 +4016,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
--------------------------------------LOKRAND - @bbbbl - @Y07BOT - @VVWVV3 - @k777a ---------------------------------------
+-------------------------------------LOKRAND - @bbbbl - @Y07BOT - @VVWVV3 - @b6661 ---------------------------------------
 if text == 'مسح المحظورين' and Mod(msg) then
 database:del(bot_id..'Ban:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '\n܁༯┆تم مسح المحظورين 💞 ܰ')
@@ -4040,7 +4039,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("حظر") and msg.reply_to_message_id_ ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:kick'..msg.chat_id_) and not Constructor(msg) then
@@ -4121,7 +4120,7 @@ end
 if text and text:match("^حظر (%d+)$") and Mod(msg) then
 local userid = text:match("^حظر (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:kick'..msg.chat_id_) and not Constructor(msg) then
@@ -4162,7 +4161,7 @@ return false
 end
 if text == ("الغاء حظر") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4185,7 +4184,7 @@ end
 if text and text:match("^الغاء حظر @(.*)$") and Mod(msg) then
 local username = text:match("^الغاء حظر @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4211,7 +4210,7 @@ end
 if text and text:match("^الغاء حظر (%d+)$") and Mod(msg) then
 local userid = text:match("^الغاء حظر (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if tonumber(userid) == tonumber(bot_id) then
@@ -4256,7 +4255,7 @@ end
 
 if text == ("كتم") and msg.reply_to_message_id_ ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4285,7 +4284,7 @@ end
 if text and text:match("^كتم @(.*)$") and Mod(msg) then
 local username = text:match("^كتم @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if msg.can_be_deleted_ == false then 
@@ -4392,7 +4391,7 @@ end
 if text and text:match("^كتم (%d+)$") and Mod(msg) then
 local userid = text:match("^كتم (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if tonumber(userid) == tonumber(bot_id) then  
@@ -4422,7 +4421,7 @@ return false
 end
 if text == ("الغاء كتم") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4439,7 +4438,7 @@ end
 if text and text:match("^الغاء كتم @(.*)$") and Mod(msg) then
 local username = text:match("^الغاء كتم @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4460,7 +4459,7 @@ end
 if text and text:match("^الغاء كتم (%d+)$") and Mod(msg) then
 local userid = text:match("^الغاء كتم (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:srem(bot_id..'Muted:User'..msg.chat_id_, userid)
@@ -4479,7 +4478,7 @@ end
 
 if text == ("تقيد") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4505,7 +4504,7 @@ end
 if text and text:match("^تقيد @(.*)$") and Mod(msg) then
 local username = text:match("^تقيد @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4611,7 +4610,7 @@ end
 if text and text:match("^تقيد (%d+)$") and Mod(msg) then
 local userid = text:match("^تقيد (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if tonumber(userid) == tonumber(bot_id) then  
@@ -4638,7 +4637,7 @@ end
 ------------------------------------------------------------------------
 if text == ("الغاء تقيد") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4656,7 +4655,7 @@ end
 if text and text:match("^الغاء تقيد @(.*)$") and Mod(msg) then
 local username = text:match("^الغاء تقيد @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4677,7 +4676,7 @@ end
 if text and text:match("^الغاء تقيد (%d+)$") and Mod(msg) then
 local userid = text:match("^الغاء تقيد (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..userid.. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
@@ -4696,7 +4695,7 @@ end
 if text and text:match('^رفع القيود @(.*)') and Manager(msg) then 
 local username = text:match('^رفع القيود @(.*)') 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4727,7 +4726,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 end
 if text == "رفع القيود" and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4755,7 +4754,7 @@ end
 if text and text:match('^كشف القيود @(.*)') and Manager(msg) then 
 local username = text:match('^كشف القيود @(.*)') 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -4787,7 +4786,7 @@ end
 
 if text == "كشف القيود" and Manager(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5333,12 +5332,12 @@ local text =
 ' }\n'..'📮┆ الايدي ← { '..idgp..
 ' }\n'..'📮┆ الايدي بالصوره ← { '..idph..
 ' }\n'..'📮┆ الرفع ← { '..setadd..
-' }\n'..'📮┆ الحظر ← { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n🔖┆ CH » @xxxc_x\n'
+' }\n'..'📮┆ الحظر ← { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n🔖┆ CH » @b6661\n'
 send(msg.chat_id_, msg.id_,text)     
 end    
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:sismember(bot_id..'lock:pin',msg.chat_id_) and not Constructor(msg) then
@@ -5360,7 +5359,7 @@ end,nil)
 end
 if text == 'الغاء التثبيت' and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:sismember(bot_id..'lock:pin',msg.chat_id_) and not Constructor(msg) then
@@ -5394,7 +5393,7 @@ end
 if text == "ضع رابط" or text == 'وضع رابط' then
 if msg.reply_to_message_id_ == 0  and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_,msg.id_,"܁༯┆ههلو عمري 💞 ܰ \n܁༯┆ارسل رابط المجموعة او قناة المجموعة 💞 ܰ")
@@ -5442,7 +5441,7 @@ end
 ---------
 if text == ("رفع بنت الكروب") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5459,7 +5458,7 @@ end
 
 if (text == ("تنزيل بنت الكروب")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5493,7 +5492,7 @@ end
 ---------
 if text == ("رفع مطي") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5510,7 +5509,7 @@ end
 
 if (text == ("تنزيل مطي")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5544,7 +5543,7 @@ end
 ---------
 if text == ("رفع اثول") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5561,7 +5560,7 @@ end
 
 if (text == ("تنزيل اثول")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5595,7 +5594,7 @@ end
 ---------
 if text == ("رفع نبي") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5612,7 +5611,7 @@ end
 
 if (text == ("تنزيل نبي")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5646,7 +5645,7 @@ end
 ---------
 if text == ("رفع جلب") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5663,7 +5662,7 @@ end
 
 if (text == ("تنزيل جلب")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5697,7 +5696,7 @@ end
 ---------
 if text == ("رفع صخل") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5714,7 +5713,7 @@ end
 
 if (text == ("تنزيل صخل")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5748,7 +5747,7 @@ end
 ---------
 if text == ("رفع زاحف") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5765,7 +5764,7 @@ end
 
 if (text == ("تنزيل زاحف")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5799,7 +5798,7 @@ end
 ---------
 if text == ("رفع بكلبي") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5816,7 +5815,7 @@ end
 
 if (text == ("تنزيل بكلبي")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5850,7 +5849,7 @@ end
 ---------
 if text == ("رفع تاج") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5867,7 +5866,7 @@ end
 
 if (text == ("تنزيل تاج")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5885,7 +5884,7 @@ end
 
 if text == ("نزوج") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5902,7 +5901,7 @@ end
 
 if text == ("طالق") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -5962,7 +5961,7 @@ end
 if text == 'مسح الرابط' or text == 'حذف الرابط' then
 if Mod(msg) then     
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_,msg.id_,"܁༯┆تم حذف الرابط بنجاح 💞 ܰ ")           
@@ -5978,7 +5977,7 @@ end
 if text == "حذف الصوره" or text == "مسح الصوره" then 
 if Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 https.request('https://api.telegram.org/bot'..token..'/deleteChatPhoto?chat_id='..msg.chat_id_) 
@@ -6021,7 +6020,7 @@ sendDocument(msg.chat_id_, msg.id_,0, 1, nil, './NEVO.lua', '܁༯┆ ماوصي
 end
 if text == 'تفعيل الترحيب' and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id..'Chek:Welcome'..msg.chat_id_,true) 
@@ -6030,7 +6029,7 @@ return false
 end
 if text == 'تعطيل الترحيب' and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:del(bot_id..'Chek:Welcome'..msg.chat_id_) 
@@ -6193,7 +6192,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆تم حذف كليشه المطور 💞 ܰ'
 end
 if text == 'ضع كليشه المطور' and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id..'Set:Text:Dev:Bot'..msg.chat_id_,true)
@@ -6213,7 +6212,7 @@ return false
 end
 if text == 'تعين الايدي' and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
@@ -6274,7 +6273,7 @@ end
 if text == 'حذف الايدي' or text == 'مسح الايدي' then
 if Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:del(bot_id.."KLISH:ID"..msg.chat_id_)
@@ -6297,7 +6296,7 @@ end
 
 if text == 'مسح البوتات' or text == 'طرد البوتات' and Mod(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 tdcli_function ({ ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(arg,tah)  
@@ -6324,7 +6323,7 @@ end
 end
 if text == ("كشف البوتات") and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
@@ -6371,7 +6370,7 @@ end
 if text == 'ضع قوانين' or text == 'وضع قوانين' then 
 if Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6394,7 +6393,7 @@ end
 end
 if text == 'قفل التفليش' and msg.reply_to_message_id_ == 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id..'lock:tagrvrbot'..msg.chat_id_,true)   
@@ -6408,7 +6407,7 @@ end,nil)
 end
 if text == 'فتح التفليش' and msg.reply_to_message_id_ == 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:del(bot_id..'lock:tagrvrbot'..msg.chat_id_)   
@@ -6454,7 +6453,7 @@ end
 if text and text:match("^اضف صلاحيه (.*)$") and Mod(msg) then 
 ComdNew = text:match("^اضف صلاحيه (.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:set(bot_id.."Comd:New:rt"..msg.chat_id_..msg.sender_user_id_,ComdNew)  
@@ -6465,7 +6464,7 @@ end
 if text and text:match("^مسح صلاحيه (.*)$") and Mod(msg) then 
 ComdNew = text:match("^مسح صلاحيه (.*)$")
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:del(bot_id.."Comd:New:rt:bot:"..ComdNew..msg.chat_id_)
@@ -6506,7 +6505,7 @@ end
 if text and text:match('رفع (.*)') and tonumber(msg.reply_to_message_id_) > 0 and Mod(msg) then 
 local RTPA = text:match('رفع (.*)')
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:sismember(bot_id..'Coomds'..msg.chat_id_,RTPA) then
@@ -6536,7 +6535,7 @@ end
 if text and text:match('تنزيل (.*)') and tonumber(msg.reply_to_message_id_) > 0 and Mod(msg) then 
 local RTPA = text:match('تنزيل (.*)')
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:sismember(bot_id..'Coomds'..msg.chat_id_,RTPA) then
@@ -6566,7 +6565,7 @@ end
 if text and text:match('^رفع (.*) @(.*)') and Mod(msg) then 
 local text1 = {string.match(text, "^(رفع) (.*) @(.*)$")}
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:sismember(bot_id..'Coomds'..msg.chat_id_,text1[2]) then
@@ -6599,7 +6598,7 @@ end
 if text and text:match('^تنزيل (.*) @(.*)') and Mod(msg) then 
 local text1 = {string.match(text, "^(تنزيل) (.*) @(.*)$")}
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:sismember(bot_id..'Coomds'..msg.chat_id_,text1[2]) then
@@ -6635,7 +6634,7 @@ database:del(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)
 end
 if text == "رسايلي" or text == "رسائلي" or text == "msg" then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_, msg.id_,'܁༯┆عدد رسائل الحلو ◃ ['..database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)..'](https://t.me/joinchat/AAAAAEvr1yqOypm-uHojPA) 💞 ܰ' ) 
@@ -6678,7 +6677,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'تفعيل البوت خدمي' and SudoBot(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Free:Bots') then
@@ -6691,7 +6690,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'تعطيل البوت خدمي' and SudoBot(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if not database:get(bot_id..'Free:Bots') then
@@ -6705,7 +6704,7 @@ end
 if text and text:match('^تنظيف (%d+)$') and Manager(msg) then
 local num = tonumber(text:match('^تنظيف (%d+)$')) 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if num > 1000 then 
@@ -6722,7 +6721,7 @@ end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
 if SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -6731,8 +6730,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'نيفو').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'نيفو')
 local NEVO_Msg = {
 'عمغي 🥺💞💞 .',
 'هلا ابو الحب 💘💘 .'
@@ -6746,7 +6745,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆ ههلو ععمري  💞 ܰ\n܁༯┆ ال
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6755,7 +6754,7 @@ return false
 end
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6768,7 +6767,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆ ههلو ععمري  💞 ܰ\n܁༯┆ ال
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6781,7 +6780,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆ ههلو ععمري  💞 ܰ\n܁༯┆ ال
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6794,7 +6793,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆ ههلو ععمري  💞 ܰ\n܁༯┆ ال
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6804,7 +6803,7 @@ end
 if text and text:match('^ضع اسم (.*)') and Manager(msg) or text and text:match('^وضع اسم (.*)') and Manager(msg) then 
 local Name = text:match('^ضع اسم (.*)') or text:match('^وضع اسم (.*)') 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 tdcli_function ({ ID = "ChangeChatTitle",chat_id_ = msg.chat_id_,title_ = Name },function(arg,data) 
@@ -6822,7 +6821,7 @@ end
 
 if text == "تاك للكل" or text == "تاك الكل" and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
@@ -6842,7 +6841,7 @@ end,nil)
 end
 if text == ("تنزيل الكل") and msg.reply_to_message_id_ ~= 0 and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 function start_function(extra, result, success)
@@ -7013,7 +7012,7 @@ end
 end
 if text == 'اضف رد للكل' and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_, msg.id_,'܁༯┆ههلو عمري 💞 ܰ \n܁༯┆ارسل الكلمة الذي تريد اضافتها 💞 ܰ')
@@ -7022,7 +7021,7 @@ return false
 end
 if text == 'حذف رد للكل' and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_, msg.id_,'܁༯┆ههلو عمري 💞 ܰ \n܁༯┆ارسل الكلمة الذي تريد حذفها 💞 ܰ')
@@ -7201,7 +7200,7 @@ end
 end
 if text == 'اضف رد' and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_, msg.id_,'܁༯┆ههلو عمري 💞 ܰ \n܁༯┆ارسل الكلمة الذي تريد اضافتها 💞 ܰ')
@@ -7210,7 +7209,7 @@ return false
 end
 if text == 'حذف رد' and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 send(msg.chat_id_, msg.id_,'܁༯┆ارسل الكلمةه التي تريد حذفها 💞 ܰ ')
@@ -7264,7 +7263,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'نيفو').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'܁༯┆باي راح اشتاقلكم 😭💞 ܰ ') 
@@ -7273,7 +7272,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'نيفو')
 send(msg.chat_id_, msg.id_,'أسمي اللطيف '..Namebot..' . 𖤐◟') 
 end
 if text == 'الاحصائيات' then
@@ -7860,7 +7859,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == "تنظيف المشتركين" and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local pv = database:smembers(bot_id.."User_Bot")
@@ -7891,7 +7890,7 @@ return false
 end
 if text == "تنظيف الكروبات" and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local group = database:smembers(bot_id..'Chek:Groups') 
@@ -8011,7 +8010,7 @@ return false
 end
 if text == 'مجوهراتي' or text == 'مجوهراتي' then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local Num = database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_) or 0
@@ -8025,7 +8024,7 @@ end
 if text and text:match("^بيع مجوهراتي (%d+)$") or text and text:match("^بيع مجوهراتي (%d+)$") then
 local NUMPY = text:match("^بيع مجوهراتي (%d+)$") or text:match("^بيع مجوهراتي (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if tonumber(NUMPY) == tonumber(0) then
@@ -8278,7 +8277,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local help_text = database:get(bot_id..'help_text')
@@ -8311,7 +8310,7 @@ return false
 end
 print(AddChannel(msg.sender_user_id_))
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8365,7 +8364,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8401,7 +8400,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8436,7 +8435,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8474,7 +8473,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8518,7 +8517,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8571,7 +8570,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8603,7 +8602,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8677,7 +8676,7 @@ end
 ----------------------------------------------------------------------------
 if text == 'م9' or text == 'م٩' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8725,7 +8724,7 @@ send(msg.chat_id_, msg.id_,'܁༯┆عذرا الاوامر هذا لا تخصك
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 Text = [[
@@ -8752,12 +8751,12 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
--------------------------------------LOKRAND - @bbbbl - @Y07BOT - @VVWVV3 - @k777a ---------------------------------------
+-------------------------------------LOKRAND - @bbbbl - @Y07BOT - @VVWVV3 - @b6661 ---------------------------------------
 
 
 if text == 'سمايلات' or text == 'سمايل' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -8779,7 +8778,7 @@ return false
 end 
 if text == 'الاسرع' or text == 'ترتيب' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -8842,7 +8841,7 @@ end
 
 if text == 'حزوره' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -8898,7 +8897,7 @@ end
 
 if text == 'معاني' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -8945,7 +8944,7 @@ database:set(bot_id..'Set:Maany'..msg.chat_id_,true)
 end 
 if text == 'العكس' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -9017,7 +9016,7 @@ end
 end
 if text == 'خمن' or text == 'تخمين' then   
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -9049,7 +9048,7 @@ end
 
 if text == 'محيبس' or text == 'بات' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then   
@@ -9072,7 +9071,7 @@ end
 ------------------------------------------------------------------------
 if text == 'المختلف' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -9122,7 +9121,7 @@ end
 ------------------------------------------------------------------------
 if text == 'رياضيات' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -9159,7 +9158,7 @@ end
 ------------------------------------------------------------------------
 if text == 'انكليزي' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -9196,7 +9195,7 @@ end
 
 if text == 'امثله' then
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
@@ -9268,7 +9267,7 @@ send(msg.chat_id_, msg.id_,Text_Games)
 end
 if text == 'نقاطي' or text == 'نقاطي' then 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 local Num = database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_) or 0
@@ -9282,7 +9281,7 @@ end
 if text and text:match("^بيع نقاطي (%d+)$") or text and text:match("^بيع نقاطي (%d+)$") then
 local NUMPY = text:match("^بيع نقاطي (%d+)$") or text:match("^بيع نقاطي (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@k777a] .')
+send(msg.chat_id_, msg.id_,'- هلو حب ، لايمكنك استخدام البوت 💕.\n- ﭑشترك اولاً 💕 • [@b6661] .')
 return false
 end
 if tonumber(NUMPY) == tonumber(0) then
@@ -9440,7 +9439,7 @@ if (text and text == "Useuwkq ") then
 send(msg.chat_id_, msg.id_, ' ked uwiq')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'نيفو')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيبهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 

@@ -87,7 +87,7 @@ echo -e "\e[36m"
 done
 ]])  
 file:close()  
-file = io.open("NE", "w")  
+file = io.open("BK", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/NEVO

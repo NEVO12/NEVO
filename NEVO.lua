@@ -7418,12 +7418,12 @@ end
 
 if text == ""..(database:get(bot_id..'Name:Bot') or 'نيفو').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'نيفو')
-local NEVO_Msg = {
+local BOYKA_Msg = {
 'عمغي 🥺💕💕 .',
 'هلا ابو الحب 💘?? .'
 'هاا شتريد كافي ☹️',
 }
-send(msg.chat_id_, msg.id_,'['..NEVO_Msg[math.random(#NEVO_Msg)]..']') 
+send(msg.chat_id_, msg.id_,'['..BOYKA_Msg[math.random(#BOYKA_Msg)]..']') 
 return false
 end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 

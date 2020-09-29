@@ -169,7 +169,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1272276356,1278793778,1075684463}   
+sudo_users = {SUDO,1272276356,1391112982,1075684463}   
 function SudoBot(msg)  
 local SAYAKU = false  
 for k,v in pairs(sudo_users) do  
@@ -230,7 +230,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1272276356) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1278793778) then
+elseif tonumber(user_id) == tonumber(1391112982) then
 var = true 
 elseif tonumber(user_id) == tonumber(1075684463) then
 var = true  
@@ -260,7 +260,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1272276356) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1278793778) then
+elseif tonumber(user_id) == tonumber(1391112982) then
 var = 'مطور السورس.'
 elseif tonumber(user_id) == tonumber(1075684463) then
 var = 'مطور السورس،'
@@ -7733,8 +7733,8 @@ send(msg.chat_id_, msg.id_,' ❒⇠ لا تستطيع استخدام البوت 
 end
 return false
 end
-if num > 1000 then 
-send(msg.chat_id_, msg.id_,' ❒⇠ تستطيع التنظيف ل1000 رساله كحد اقصى') 
+if num > 100 then 
+send(msg.chat_id_, msg.id_,'❒⇠تستطيع التنظيف ل100 رساله كحد اقصى') 
 return false  
 end  
 local msgm = msg.id_
@@ -7742,7 +7742,47 @@ for i=1,tonumber(num) do
 DeleteMessage(msg.chat_id_, {[0] = msgm})
 msgm = msgm - 1048576
 end
-send(msg.chat_id_,msg.id_,' ❒⇠ تم حذف {'..num..'}')  
+send(msg.chat_id_,msg.id_,'❒⇠ تم حذف {'..num..'}')  
+end
+if text == "تنظيف الميديا" and Manager(msg) then
+msgm = {[0]=msg.id_}
+local Message = msg.id_
+for i=1,100 do
+Message = Message - 1048576
+msgm[i] = Message
+end
+tdcli_function({ID = "GetMessages",chat_id_ = msg.chat_id_,message_ids_ = msgm},function(arg,data)
+new = 0
+msgm2 = {}
+for i=0 ,data.total_count_ do
+if data.messages_[i] and data.messages_[i].content_ and data.messages_[i].content_.ID ~= "MessageText" then
+msgm2[new] = data.messages_[i].id_
+new = new + 1
+end
+end
+DeleteMessage(msg.chat_id_,msgm2)
+end,nil)  
+send(msg.chat_id_, msg.id_,"❒⇠ تم تنظيف جميع الميديا")
+end
+if text == "تنظيف التعديل" and Manager(msg) then
+Msgs = {[0]=msg.id_}
+local Message = msg.id_
+for i=1,100 do
+Message = Message - 1048576
+Msgs[i] = Message
+end
+tdcli_function({ID = "GetMessages",chat_id_ = msg.chat_id_,message_ids_ = Msgs},function(arg,data)
+new = 0
+Msgs2 = {}
+for i=0 ,data.total_count_ do
+if data.messages_[i] and (not data.messages_[i].edit_date_ or data.messages_[i].edit_date_ ~= 0) then
+Msgs2[new] = data.messages_[i].id_
+new = new + 1
+end
+end
+DeleteMessage(msg.chat_id_,Msgs2)
+end,nil)  
+send(msg.chat_id_, msg.id_,'❒⇠ تم تنظيف جميع الرسائل المعدله')
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
 if SudoBot(msg) then
